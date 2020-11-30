@@ -8,15 +8,23 @@ namespace ShootingDice
     {
         static void Main(string[] args)
         {
-
-            SmackTalkingPlayer Smacky = new SmackTalkingPlayer("You suck!"); 
+            Console.WriteLine("_______________");
+            Console.WriteLine("TESTING CLASSES");
+            Console.WriteLine("");
+            SmackTalkingPlayer Smacky = new SmackTalkingPlayer("You suck! "); 
             int smackyRolled = Smacky.Roll();
             Console.WriteLine($"Smacky rolled {smackyRolled}");
 
-            Player player1 = new Player();
+            OneHigherPlayer higherPlayer = new OneHigherPlayer();
+            int higherPlayerRoll = higherPlayer.Roll(smackyRolled);
+            Console.WriteLine($"One higher player rolled: {higherPlayerRoll}");
+            Console.WriteLine("_______________");
+            Console.WriteLine("");
+
+            Player player1 = new SmackTalkingPlayer("Make my day! ");
             player1.Name = "Bob";
 
-            Player player2 = new Player();
+            Player player2 = new OneHigherPlayer();
             player2.Name = "Sue";
 
             player2.Play(player1);
