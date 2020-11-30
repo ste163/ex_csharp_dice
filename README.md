@@ -21,8 +21,8 @@ The goal of this exercise is to create classes to represent those various types 
 
 #### You should complete the classes in this order:
 
-1. `SmackTalkingPlayer`
-1. `OneHigherPlayer`
+1. `SmackTalkingPlayer` - DONE
+1. `OneHigherPlayer` - DONE
 1. `HumanPlayer`
 1. `CreativeSmackTalkingPlayer`
 1. `SoreLoserPlayer`
