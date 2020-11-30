@@ -19,6 +19,11 @@ namespace ShootingDice
             int myRoll = Roll();
             int otherRoll = other.Roll();
 
+            checkRoll(myRoll, otherRoll, other);
+        }
+
+        public void checkRoll(int myRoll, int otherRoll, Player other)
+        {
             Console.WriteLine($"{Name} rolls a {myRoll}");
             Console.WriteLine($"{other.Name} rolls a {otherRoll}");
             

@@ -1,3 +1,5 @@
+using System;
+
 namespace ShootingDice
 {
     // TODO: Complete this class
@@ -5,10 +7,13 @@ namespace ShootingDice
     // A Player who always roles one higher than the other player
     public class OneHigherPlayer : Player
     {
-
-        public int Roll(int previousRoll)
+        public override void Play(Player other)
         {
-            return ++previousRoll;
+            // Call roll for "this" object and for the "other" object
+            int otherRoll = other.Roll();
+            int myRoll = otherRoll + 1;
+            
+            base.checkRoll(myRoll, otherRoll, other);
         }
     }
 }

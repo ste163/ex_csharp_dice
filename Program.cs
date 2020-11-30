@@ -11,13 +11,6 @@ namespace ShootingDice
             Console.WriteLine("_______________");
             Console.WriteLine("TESTING CLASSES");
             Console.WriteLine("");
-            SmackTalkingPlayer Smacky = new SmackTalkingPlayer("You suck! "); 
-            int smackyRolled = Smacky.Roll();
-            Console.WriteLine($"Smacky rolled {smackyRolled}");
-
-            OneHigherPlayer higherPlayer = new OneHigherPlayer();
-            int higherPlayerRoll = higherPlayer.Roll(smackyRolled);
-            Console.WriteLine($"One higher player rolled: {higherPlayerRoll}");
             Console.WriteLine("_______________");
             Console.WriteLine("");
 
