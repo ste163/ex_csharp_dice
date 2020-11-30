@@ -8,6 +8,11 @@ namespace ShootingDice
     {
         static void Main(string[] args)
         {
+
+            SmackTalkingPlayer Smacky = new SmackTalkingPlayer("You suck!"); 
+            int smackyRolled = Smacky.Roll();
+            Console.WriteLine($"Smacky rolled {smackyRolled}");
+
             Player player1 = new Player();
             player1.Name = "Bob";
 
