@@ -11,8 +11,7 @@ namespace ShootingDice
 
             while(true)
             {
-                string rollMsg = $"Enter number between 1-{DiceSize} that you rolled: ";
-                Console.Write(rollMsg);
+                Console.Write($"Enter number between 1-{DiceSize} to roll: ");
                 string entered = Console.ReadLine();
                 try 
                 {

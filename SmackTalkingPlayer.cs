@@ -11,7 +11,7 @@ namespace ShootingDice
 
         public override int Roll()
         {
-            Console.Write(Taunt);
+            Console.WriteLine($"{Name} says: {Taunt}");
             return base.Roll();
         }
 

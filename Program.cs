@@ -8,12 +8,6 @@ namespace ShootingDice
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("_______________");
-            Console.WriteLine("TESTING CLASSES");
-            Console.WriteLine("");
-            Console.WriteLine("_______________");
-            Console.WriteLine("");
-
             Player player1 = new SmackTalkingPlayer("Make my day! ");
             player1.Name = "Bob";
 
@@ -21,25 +15,28 @@ namespace ShootingDice
             player2.Name = "Sue";
 
             player2.Play(player1);
-
             Console.WriteLine("-------------------");
 
             Player player3 = new HumanPlayer();
             player3.Name = "Wilma";
 
             player3.Play(player2);
+            Console.WriteLine("-------------------");
 
+            Player player4 = new CreativeSmackTalkingPlayer();
+            player4.Name = "The Dude";
+
+            player4.Play(player3);
             Console.WriteLine("-------------------");
 
             Player large = new LargeDicePlayer();
             large.Name = "Bigun Rollsalot";
 
             player1.Play(large);
-
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large
+                player1, player2, player3, player4, large
             };
 
             PlayMany(players);
