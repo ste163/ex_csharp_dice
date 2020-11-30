@@ -29,6 +29,19 @@ namespace ShootingDice
             player4.Play(player3);
             Console.WriteLine("-------------------");
 
+            Player player5 = new SoreLoserPlayer();
+            player5.Name = "Big Baby";
+
+            try
+            {
+                player5.Play(player1);
+            }
+            catch (RageQuitException)
+            {
+                Console.WriteLine($"{player5.Name} rage quit. Everyone is happy again.");
+            }
+            Console.WriteLine("-------------------");
+
             Player large = new LargeDicePlayer();
             large.Name = "Bigun Rollsalot";
 

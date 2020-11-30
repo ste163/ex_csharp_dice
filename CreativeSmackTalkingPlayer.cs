@@ -18,8 +18,8 @@ namespace ShootingDice
         public override int Roll()
         {
             Random r = new Random();
-            int tauntInt = r.Next(0, _allTaunts.Count);
-            string randomTaunt = _allTaunts[tauntInt];
+            int tauntIndex = r.Next(0, _allTaunts.Count);
+            string randomTaunt = _allTaunts[tauntIndex];
             
             Console.WriteLine($"{Name} says: {randomTaunt}");
             return base.Roll();
