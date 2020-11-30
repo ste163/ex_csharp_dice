@@ -15,7 +15,7 @@ namespace ShootingDice
                 string entered = Console.ReadLine();
                 try 
                 {
-                    roll = Int32.Parse(entered);
+                    roll = int.Parse(entered);
                 }
                 // Empty catch because while loop resets our message
                 // This allows the program to continue if user enters a non-int

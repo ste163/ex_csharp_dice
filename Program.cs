@@ -55,11 +55,8 @@ namespace ShootingDice
             // We are going to match players against each other
             // This means we need an even number of players
             int maxIndex = shuffledPlayers.Count;
-            if (maxIndex % 2 != 0)
-            {
-                maxIndex = maxIndex - 1;
-            }
-
+            if (maxIndex % 2 != 0) maxIndex = maxIndex - 1;
+            
             // Loop over the players 2 at a time
             for (int i = 0; i < maxIndex; i += 2)
             {

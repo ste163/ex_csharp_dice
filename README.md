@@ -24,7 +24,7 @@ The goal of this exercise is to create classes to represent those various types 
 1. `SmackTalkingPlayer` - DONE
 1. `OneHigherPlayer` - DONE
 1. `HumanPlayer` - DONE
-1. `CreativeSmackTalkingPlayer`
+1. `CreativeSmackTalkingPlayer` - DONE
 1. `SoreLoserPlayer`
 1. `UpperHalfPlayer`
 1. `SoreLoserUpperHalfPlayer`
